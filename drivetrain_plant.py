@@ -18,11 +18,11 @@ class DriveTrainPlant:
 
     Kt = stall_torque/stall_current
 
-    r = 0.15
+    r = 6*0.0254/2
 
     J = r**2 * 30 / G
 
-    D = 5*10e-1
+    D = 1.8*10e-0
 
     def __init__(self, dt):
         self.x_hat = np.array([0,0,0]).reshape(-1, 1)
